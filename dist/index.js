@@ -20,8 +20,11 @@ const askWhichScript = async () => {
         name: "script",
         type: "list",
         message: "Select which script you would like to execute:",
-        choices: config.scripts.map(script => script.name),
+        choices: config.scripts.map(script => script.name).concat(["Cancel"]),
     });
+    // If cancel is selected, don't execute a script
+    if (answers.script === "Cancel")
+        return;
     // Execute the selected script
     executeScript(answers.script);
 };
