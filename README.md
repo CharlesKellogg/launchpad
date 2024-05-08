@@ -2,8 +2,9 @@
 Launchpad is a simple CLI tool that I have created so that I can run all my scripts from one command.
 
 ## Installation
-- Ensure you have Node.js installed
+- Ensure you have Node.js and a node package manager installed
 - Clone this repository
+- In this directory, run "npm install" or an equivalent command to install the required Node modules
 
 ## Configuration
 You will need to create a file at `~/.config/ck-launchpad/config.json` where `~` is your home directory.
