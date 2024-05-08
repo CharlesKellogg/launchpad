@@ -9,6 +9,8 @@ const executeScript = async (scriptName) => {
     const selectedScript = config.scripts.find(script => script.name === scriptName);
     // Get the path to the script directory and replace ~ with the user's home directory, since ~ is OS-specific
     const scriptDirPath = config.scriptDir.replace("~", os.homedir());
+    // Remove any trailing "/" from the path
+    scriptDirPath.replace(/\/+$/, "");
     // Get the full script path
     const scriptPath = `${scriptDirPath}/${selectedScript?.pathFromScriptDir}`;
     // Execute the script
