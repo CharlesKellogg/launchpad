@@ -6,7 +6,7 @@ Launchpad is a simple CLI tool that I have created so that I can run all my scri
 - Clone this repository
 
 ## Configuration
-You will need to create a file at `~/.config/ck-launchpad/config.json` where `~` is replaced with a path to your home directory, if `~` is not an alias for it.
+You will need to create a file at `~/.config/ck-launchpad/config.json` where `~` is your home directory.
 This file should be structured as follows:
 ```json
 {
@@ -21,5 +21,5 @@ This file should be structured as follows:
 ```
 
 ## Usage
-To use this tool, run `node \<BaseDirectory\>/dist/index.js` where `\<BaseDirectory\>` is replaced with the path to the base directory of this project.
+To use this tool, run `node <BaseDirectory>/dist/index.js` where `<BaseDirectory>` is replaced with the path to the base directory of this project.
 Alternatively, you can give that command an alias that is shorter to type. The alias for that command on my setup is `launchpad`.
