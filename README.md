@@ -11,7 +11,7 @@ You will need to create a file at `~/.config/ck-launchpad/config.json` where `~`
 This file should be structured as follows:
 ```json
 {
-    "scriptsDir": "Replace with the path to the directory where your scripts are stored. ~ can be used as an alias for your home directory.",
+    "scriptDir": "Replace with the path to the directory where your scripts are stored. ~ can be used as an alias for your home directory.",
     "scripts": [
         {
             "name": "Replace with the name of this script",
